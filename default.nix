@@ -9,6 +9,14 @@
     dream2nix.modules.dream2nix.nodejs-granular-v3
   ];
 
+  mkDerivation = {
+    src = config.deps.fetchFromGitHub {
+      owner = "myuimu";
+      repo = "chip-nix";
+      rev = "dream2nix";
+    };
+  };
+
   deps = {nixpkgs, ...}: {
     inherit
       (nixpkgs)
