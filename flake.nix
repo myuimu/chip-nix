@@ -11,7 +11,8 @@
     self,
     dream2nix,
     nixpkgs,
-    flake-utils
+    flake-utils,
+    ...
   }: flake-utils.lib.eachDefaultSystem(system:
     let
     in {
