@@ -1,15 +1,14 @@
 {
   config,
   lib,
-  dream2nix,
-  ...
+  dream2nix
 }: {
   imports = [
     dream2nix.modules.dream2nix.nodejs-package-lock-v3
     dream2nix.modules.dream2nix.nodejs-granular-v3
   ];
 
-  deps = {nixpkgs, ...}: {
+  deps = {nixpkgs}: {
     (nixpkgs)
     fetchFromGitHub
     stdenv
