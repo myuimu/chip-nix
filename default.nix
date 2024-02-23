@@ -10,10 +10,11 @@
   ];
 
   deps = {nixpkgs, ...}: {
-    (nixpkgs)
-    fetchFromGitHub
-    stdenv
-    ;
+    inherit
+      (nixpkgs)
+      fetchFromGitHub
+      stdenv
+      ;
   };
 
   nodejs-package-lock-v3 = {
