@@ -9,9 +9,7 @@
   outputs = { self, nixpkgs, flake-utils }:
     flake-utils.lib.eachDefaultSystem(system:
       let
-        pkgs = import nixpkgs {
-          inherit system;
-        };
+        pkgs = nixpkgs.legacyPackages.${system};
         nixified =
           pkgs.stdenv.mkDerivation {
             name = "chip-nix";
@@ -44,7 +42,7 @@
         nodeDependencies = shell.nodeDependencies;
       in
       {
-        defaultPackage."${system}" =
+        defaultPackage =
           pkgs.stdenv.mkDerivation {
             name = "chip";
             # Use source
