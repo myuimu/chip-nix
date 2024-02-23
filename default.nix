@@ -26,7 +26,7 @@
   };
 
   nodejs-package-lock-v3 = {
-    packageLockFile = "./package-lock.json";
+    packageLockFile = "${config.mkDerivation.src}/package-lock.json";
   };
 
   name = "chip";
