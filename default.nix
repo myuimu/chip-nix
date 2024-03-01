@@ -14,7 +14,6 @@
       owner = "myuimu";
       repo = "chip-nix";
       rev = "27fcdbd3adf032d8b9314b11ea8c3a6e0481252a";
-      sha256 = "sha256-gxXcG+1qZlB+saQrfwW/8dPjwCIIPw/9prr8Er6AnB4=";
     };
   };
 
