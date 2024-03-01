@@ -13,8 +13,7 @@
     src = config.deps.fetchFromGitHub {
       owner = "myuimu";
       repo = "chip-nix";
-      rev = "dream2nix";
-      sha256 = "sha256-f370uYeHUyrO+LMstEl14tXKr04zaZy9M1n8UcKTwR8=";
+      rev = "84f4e8b8b917c35f5ed27e4b9dcf716340c5d1a3";
     };
   };
 
