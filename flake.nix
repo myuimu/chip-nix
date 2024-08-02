@@ -19,6 +19,7 @@
       packages.default = dream2nix.lib.evalModules {
         packageSets.nixpkgs = inputs.dream2nix.inputs.nixpkgs.legacyPackages.${system};
         modules = [
+          ./default.nix
           {
             paths.projectRoot = ./.;
             paths.projectRootFile = "flake.nix";
